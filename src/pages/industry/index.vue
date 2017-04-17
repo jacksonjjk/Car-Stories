@@ -17,10 +17,13 @@
 
 <script>
 
-    import {mapActions} from "vuex";
+    // import {mapState} from "vuex";
     export default {
         computed: {
             countAnother: function () {  // 获取state
+                if(this.$store.getters.haha==''){
+                    this.$store.dispatch("download2");
+                }
                 return this.$store.getters.haha;
             }
         }

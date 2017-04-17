@@ -28,16 +28,8 @@ const store ={
         SB(state,value){
             state.sb=value;
         },
-        DSB(state){
-           $.ajax({
-                url: 'http://localhost:888/index/index',
-                type: 'GET',
-                data: '',
-                success:function(response){                    
-                    console.log(response);
-                    state.dsb=response;                 
-                }
-            })  
+        DSB(state,value){
+            state.dsb=value;
         }
     },
     actions: {
@@ -58,6 +50,17 @@ const store ={
                 success:function(response){                    
                     console.log(response);
                     commit("SB",response);                  
+                }
+            })
+        },
+        download2({commit}){
+            $.ajax({
+                url: 'http://localhost:888/query',
+                type: 'GET',
+                data: '',
+                success:function(response){                    
+                    console.log(response);
+                    commit("DSB",response);                  
                 }
             })
         }
