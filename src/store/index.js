@@ -44,23 +44,25 @@ const store ={
         },
         download({commit}){
             $.ajax({
-                url: 'http://localhost:888/index/index',
+                url: 'http://localhost/Car-Stories/navigation.php',
                 type: 'GET',
                 data: '',
-                success:function(response){                    
-                    console.log(response);
-                    commit("SB",response);                  
+                success:function(response){ 
+                    var arr = JSON.parse(response);                   
+                    // console.log(response);
+                    commit("SB",arr);                
                 }
             })
         },
         download2({commit}){
             $.ajax({
-                url: 'http://localhost:888/query',
+                url: 'http://localhost/yqlJD/ajax/liushenzhuang.php',
                 type: 'GET',
                 data: '',
-                success:function(response){                    
-                    console.log(response);
-                    commit("DSB",response);                  
+                success:function(response){ 
+                    var arr = JSON.parse(response);                
+                    // console.log(response);
+                    commit("DSB",arr);                  
                 }
             })
         }
