@@ -5,22 +5,22 @@
 	</v-header>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide"><li><img src="./img/blann.jpg"></li></div>
-				<div class="swiper-slide">Slide 2</div>
-				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide"><li><img src="http://localhost/car1/img/1491991450054.jpg"></li></div>
+				<div class="swiper-slide"><li><img src="http://localhost/car1/img/1492158278512.jpg"></li></div>
+				<div class="swiper-slide"><li><img src="http://localhost/car1/img/1492154369790.jpg"></li></div>
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
-		<div class="wrap">
+		<div class="wrap"  v-for="key in data"	>
 			<div class="carz">2017 上海</div>
 			<div class="carz_li">
 				<div class="carz_li_left">
-					<p class="carz_li_title">采用运动化设计，LYNK&CO4月16日公布概念轿车领克03</p>
+					<p class="carz_li_title">{{key.title}}</p>
 					<p class="carz_li_hot"><span class="yc">原创</span><span class="cartitle">汽车头条 11分钟前</span><span class="pl">评论(0)</span></p>
 					<div class="clear"></div> 
 				</div>
 				<div class="carz_li_right">
-					<img src="./img/carz.jpg">
+					<img :src="'http://localhost/car1/img/'+key.img">
 					<div class="clear"></div> 
 				</div>
 			</div>
@@ -28,9 +28,9 @@
 				<div class="clear"></div> 
 			</p>
 			<div class="word_middle">
-				<img src="./img/word_middle_1.jpg" style="width:110px;">
-				<img src="./img/word_middle_2.jpg" style="width:110px; margin: 0 10px;">
-				<img src="./img/word_middle_3.jpg" style="width:110px;">
+				<img src="http://localhost/car1/img/1492158278512.jpg" style="width:110px;">
+				<img src="http://localhost/car1/img/1492156805239.jpg" style="width:110px; margin: 0 10px;">
+				<img src="http://localhost/car1/img/1492154369790.jpg" style="width:110px;">
 				<div class="clear"></div> 
 			</div>
 			<p class="word_bottom">
@@ -40,6 +40,7 @@
 				<span class="bpl">评论(0)</span>
 				<div class="clear"></div> 
 			</p>
+			<div>{{dataIndex}}</div>
 		</div>
 	</div>
 </template>
@@ -51,7 +52,8 @@
 	.wrap{width:360px; margin:0 auto;}
 	*{margin:0; padding:0; list-style: none;}
 	.blannr{
-		width:100%;
+		width:100%;	
+		margin-top:50px;
 		img{
 			width:100%;
 		}
@@ -122,9 +124,30 @@
 </style>
 
 <script>
- import './swiper.min.css'
- import  swiper from "./swiper.min.js";
+ import './swiper.min.css';
+ import "./swiper.min.js";
+ import {mapActions} from "vuex";
+
  export default {
-	 
+	data(){
+		return {
+			data:''
+		}
+	},
+	created(){
+		setTimeout(function(){
+			var mySwiper = new Swiper('.swiper-container',{
+			pagination : '.swiper-pagination',
+			//pagination : '#swiper-pagination1',
+			})
+		},60)
+		this.$store.dispatch('data_index');
+	},
+	mounted(){
+		setTimeout(function(){
+			this.$set(this.$data, 'data', this.$store.getters.dataIndex)
+			console.log(this.$data.data)
+		}.bind(this),60)
+	}	
  }
 </script>
