@@ -14,5 +14,5 @@ module.exports = {
         port: 22 //端口
     },
     publicPath: '/', //程序在网站根路径地址
-    target: 'https://cnodejs.org/' //连接的服务器地址
+    // target: 'https://cnodejs.org/' //连接的服务器地址
 }

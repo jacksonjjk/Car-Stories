@@ -1,0 +1,120 @@
+body, button, input, select, textarea {
+    font-family: "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", SimSun, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+.details_wrap {
+    padding: 2% 0.5rem;
+}
+.details_wrap .title {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.details_wrap .title {
+    font-size: 1.15re;
+    line-height: 1.3;
+}
+
+.details_wrap p .hit {
+    font-size: 0.6rem;
+    color: #999;
+    display: inline-block;
+    float: right;
+}
+.details_wrap p .date {
+    font-size: 0.6rem;
+    color: #999;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+}
+
+.pic-list3 > li {
+    border-top: none;
+    position: relative;
+}
+.pic-list3 > li > a {
+    border-bottom: 1px solid #dddddd;
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    border-bottom: none;
+    padding: 0.75rem 0px 0.5rem 3.75rem;
+    margin: 0 0.5rem;
+}
+
+.pic-list3 .pic{
+    width: 3.0rem;
+    height: 3.0rem;
+    border-radius: 3.0rem;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+.pic-list3 .pic img {
+    width: 3.0rem;
+    height: 3.0rem;
+    vertical-align: middle;
+}
+.pic-list3 .title {
+    max-width: 100%;
+    color: #999;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+.pic-list3 .date {
+    color: #333;
+}
+.pic-list3 .txt {
+    margin-bottom: 0.25rem;
+    height: 30px;
+    line-height: 30px
+}
+.details_new_bg {
+    background: #fff;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    min-height: 1.5rem;
+    padding: 0 2%;
+}
+.related {
+    width: 3.2rem;
+    font-size: 0.6rem;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.5rem;
+}
+
+.related_item a {
+    font-size: 0.6rem;
+    padding: 0.05rem 0.2rem;
+    border: 0.05rem solid #18aac1;
+    color: #18aac1;
+    float: left;
+    margin: 0.25rem 0.2rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    line-height: 0.7rem;
+}
+.related_item {
+    margin-left: 3.2rem;
+    overflow: hidden;
+}
+.line_bg2 {
+    background-color: #f0f0f0;
+    border-bottom: 0.05rem solid #ddd;
+    border-top: 0.05rem solid #ddd;
+    padding: 2% 0;
+}

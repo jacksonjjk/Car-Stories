@@ -31,9 +31,15 @@ export default [
                 component: resolve => require(['../pages/movie/'], resolve)
             },
             {
-                path: 'newcar', //新车
+                path: '/newcar', //新车
                 meta: { auth: false },
                 component: resolve => require(['../pages/newcar/'], resolve)
+            },
+            {
+                path:'/newCarDetail',
+                name:'newCarDetail',
+                meta: { auth: false },
+                component: resolve  => require(['../pages/newCarDetail/'], resolve)
             },
             {
                 path: 'industry', //行业
