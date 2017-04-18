@@ -30,6 +30,10 @@ const store ={
         },
         DSB(state,value){
             state.dsb=value;
+        },
+        dataIndex(state,value){
+            state.data_index = value
+            console.log(1)
         }
     },
     actions: {
@@ -65,6 +69,14 @@ const store ={
                     commit("DSB",arr);                  
                 }
             })
+        },
+        data_index({commit}){
+            console.log(2)
+            $.get("http://localhost/car1/test2.php",function(res){
+                var res = JSON.parse(res);
+                // console.log(res)
+                commit("dataIndex",res)
+            })
         }
     },
     getters: {  // getters
@@ -76,6 +88,10 @@ const store ={
         },
         haha:function(state){
             return state.dsb
+        },
+        dataIndex:function(state){
+            console.log(3)
+            return state.data_index
         }
     }
 }
