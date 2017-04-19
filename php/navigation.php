@@ -1,5 +1,8 @@
 <?php
 header("Access-Control-Allow-Origin: http://localhost:3000");
+
+$index = $_POST["index"];
+
 class Goods{
     public $index_id;
     public $liClass;
@@ -15,12 +18,12 @@ $con = new mysqli("127.0.0.1","root","","car") or die("连接失败!");
 
 $con->query("set names utf8");
 
-$sql = "select * from navigation";
+$sql = "select * from navigation where index_id<=$index";
 $result = $con->query($sql);
 if($result->num_rows > 0){
 
     $arr = array();
-    while($row = $result->fetch_assoc()){
+     while($row = $result->fetch_assoc()){
         $leng = strlen($row["img"]);
         $img1 = $row["img"];
         $goods = new Goods();
@@ -53,6 +56,6 @@ else {
     echo "没有商品";
 }
 
-$con->close();	
+$con->close();  
 
  ?>

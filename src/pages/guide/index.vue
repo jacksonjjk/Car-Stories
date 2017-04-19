@@ -1,10 +1,12 @@
 <template>
-	<div>
-	<v-header title="汽车风云">
-			<router-link slot="right" to="/search">搜索</router-link>
-	</v-header>
-	<div id="app">
-        <ul class="lists" >
+<div>
+<v-header title="汽车风云">
+      <router-link slot="right" to="/search">搜索</router-link>
+  </v-header>
+  <div id="app" style="height: 100%;">
+    <div id="wrapper" style="height: 100%;">
+      <div id="scroller">
+        <ul class="lists">
           <li v-for="(item,index) in msg">
             <a class="lists_a clearfix" href="#">
               <div class="g_text">
@@ -16,32 +18,71 @@
                   <span class="Comments">{{item.comment}}</span>
                 </div>
               </div>
-              <img :src="'http://localhost/Car-Stories/src/assets/jy_img/'+item.img" class="g_img">
+              <img class="g_img" v-bind:src="'http://localhost/Car-Stories/src/assets/jy_img/'+item.img">
             </a>
           </li>
-        </ul>     
+        </ul>
+        <div id="pullUp">
+          <span class="pullUpLabel">加载中</span>
+        </div>
+      </div>
     </div>
-	</div>
+  </div>
+</div>
 </template>
 
 <script>
+import $ from 'jquery'
+import IScroll from './iscroll-probe.js'
 
-    export default {
-        computed: {
-            msg: function () {  // 获取state
-                if(this.$store.getters.sbsb==''){
-                    this.$store.dispatch("download");
-                }
-                return this.$store.getters.sbsb;
-                console.log(sbsb);
-            }
-        }
+
+
+export default {
+  name: 'app',
+  data (){
+    return {
+      msg:[],
+      num:10
     }
-
+  },
+  created (){
+    let self=this;
+    function ajax(){
+      $.ajax({
+      type:"post",
+      url:"http://localhost/Car-Stories/php/navigation.php",
+      dataType:"json",
+      data:{"index":self.num},
+      success: res => {
+          self.msg = res;
+      },
+      error: err => {
+        console.log(err)
+      },
+      complete: () => {
+        console.log("请求完成")
+      }
+     })
+    };
+    ajax()
+    // setTimeout(function(){
+    // var myScroll = new IScroll('#wrapper',{ 
+    //     probeType: 2, 
+    //     mouseWheel: true,
+    // });
+    // myScroll.on('scrollEnd',function(){
+    //   if(this.y<=this.maxScrollY){
+    //     self.num+=5;
+    //     ajax();
+    //     setTimeout(function(){
+    //       myScroll.refresh();
+    //     },500)
+    //   }
+    // })
+    //  },200)
+  }
+}
 </script>
-
-
-
 
 <style>
 *{
@@ -117,5 +158,11 @@ a{
   float: right;
   width: 5.5rem;
   height: 4.1rem;
+}
+.pullUpLabel{
+  display: block;
+  line-height: 30px;
+    color: #888;
+    text-align: center;
 }
 </style>
