@@ -1,3 +1,4 @@
+技术栈：vue+vuex+webpack+ES6+bable+less+php+mysql
 
 注意：此项目需放在服务器根目录下运行
 
