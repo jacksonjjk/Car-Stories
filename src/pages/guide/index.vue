@@ -1,6 +1,6 @@
 <template>
-<div>
-<v-header title="汽车风云">
+  <div style="height: 100%;">
+  <v-header title="汽车风云">
       <router-link slot="right" to="/search">搜索</router-link>
   </v-header>
   <div id="app" style="height: 100%;">
@@ -65,21 +65,21 @@ export default {
      })
     };
     ajax()
-    // setTimeout(function(){
-    // var myScroll = new IScroll('#wrapper',{ 
-    //     probeType: 2, 
-    //     mouseWheel: true,
-    // });
-    // myScroll.on('scrollEnd',function(){
-    //   if(this.y<=this.maxScrollY){
-    //     self.num+=5;
-    //     ajax();
-    //     setTimeout(function(){
-    //       myScroll.refresh();
-    //     },500)
-    //   }
-    // })
-    //  },200)
+    setTimeout(function(){
+      var myScroll = new IScroll('#wrapper',{ 
+          probeType: 2, 
+          mouseWheel: true,
+      });
+      myScroll.on('scrollEnd',function(){
+        if(this.y<=this.maxScrollY){
+          self.num+=5;
+          ajax();
+          setTimeout(function(){
+            myScroll.refresh();
+          },500)
+        }
+      })
+    },500)
   }
 }
 </script>
@@ -96,7 +96,6 @@ ul,li{
 body,html{
   height: 100%;
   font-size: 0.8rem;
-
 }
 a{
   color: #333;

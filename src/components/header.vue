@@ -4,7 +4,7 @@
     @navbg:#eee;
     @navcolor:#17adc1;
     *{padding:0; margin:0; list-style:none;}
-    .kinw_all{width:100%; position: relative; overflow:hidden; min-height:90px;}
+    .kinw_all{width:100%; position: relative; overflow:hidden; min-height:90px;z-index:30}
     .kinw_header{
         width:100%; 
         height:50px; 
