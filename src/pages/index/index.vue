@@ -12,7 +12,7 @@
 			<div class="swiper-pagination"></div>
 		</div>
 		<div class="wrap"  v-for="key in data"	>
-			<div class="carz">2017 上海</div>
+			<!--<div class="carz">2017 上海</div>-->
 			<div class="carz_li">
 				<div class="carz_li_left">
 					<p class="carz_li_title">{{key.title}}</p>
@@ -24,23 +24,22 @@
 					<div class="clear"></div> 
 				</div>
 			</div>
-			<p class="word">追求你的真实态度，一起上头条，人人都是头条客！
+			<!--<p class="word">追求你的真实态度，一起上头条，人人都是头条客！
 				<div class="clear"></div> 
-			</p>
-			<div class="word_middle">
+			</p>-->
+			<!--<div class="word_middle">
 				<img src="http://localhost/car1/img/1492158278512.jpg" style="width:110px;">
 				<img src="http://localhost/car1/img/1492156805239.jpg" style="width:110px; margin: 0 10px;">
 				<img src="http://localhost/car1/img/1492154369790.jpg" style="width:110px;">
 				<div class="clear"></div> 
-			</div>
-			<p class="word_bottom">
+			</div>-->
+			<!--<p class="word_bottom">
 				<span class="fixtop">置顶</span>
 				<span>汽车头条</span>
 				<span class="date">04-14</span>
 				<span class="bpl">评论(0)</span>
 				<div class="clear"></div> 
-			</p>
-			<div>{{dataIndex}}</div>
+			</p>-->
 		</div>
 	</div>
 </template>
@@ -50,10 +49,11 @@
 	@maincolor:#17adc1;
 	.clear{ clear:both} 
 	.wrap{width:360px; margin:0 auto;}
+	v-header{float:left;}
 	*{margin:0; padding:0; list-style: none;}
 	.blannr{
 		width:100%;	
-		margin-top:50px;
+		/*margin-top:50px;*/
 		img{
 			width:100%;
 		}
@@ -65,13 +65,20 @@
 		}
 		.carz_li{
 				width:100%;
+				height:100px;
+				border-bottom: 1px solid #ccc;
+				margin-bottom:10px;
 			.carz_li_left{
 				width:235px;
+				font-size:14px;
 				float:left;
 				color:@maincolor;
+				.carz_li_title{
+					height:48px;
+					margin-bottom:20px;					
+				}
 				.carz_li_hot{
 					font-size:12px;
-					margin-top:20px;
 					.yc{
 						height:14px;
 						border:1px solid @maincolor;
@@ -140,14 +147,13 @@
 			pagination : '.swiper-pagination',
 			//pagination : '#swiper-pagination1',
 			})
-		},60)
+		},100)
 		this.$store.dispatch('data_index');
 	},
 	mounted(){
 		setTimeout(function(){
 			this.$set(this.$data, 'data', this.$store.getters.dataIndex)
-			console.log(this.$data.data)
-		}.bind(this),60)
+		}.bind(this),100)
 	}	
  }
 </script>
