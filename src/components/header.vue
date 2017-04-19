@@ -59,7 +59,7 @@
 	<header class="header">
 		<div id="app">
         <div class="kinw_all">
-            <div class="kinw_header"><h1 class="kinw_title">汽车风云</h1><span  @click="test"  class="kinw_search"></span></div>
+            <div class="kinw_header"><h1 class="kinw_title">汽车风云</h1><router-link to="/search"  @click="test"  class="kinw_search"></router-link></div>
             <ul class="kinw_nav" v-on:touchstart="down" v-bind:style="{left:left}">
                 <li @touchend="mouse"><router-link to="/">首页</router-link></li>
                 <li @touchend="mouse"><router-link to="/movie">视频</router-link></li>

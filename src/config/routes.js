@@ -56,6 +56,11 @@ export default [
                 meta: { auth: false },
                 component: resolve => require(['../pages/guide/'], resolve)
             },
+            {
+                path: 'search', //导购
+                meta: { auth: false },
+                component: resolve => require(['../pages/search/'], resolve)
+            }
             // {
             //     path: '*', //其他页面，强制跳转到登录页面
             //     redirect: '/login'

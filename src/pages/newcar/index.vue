@@ -66,7 +66,7 @@
 				dataType: "json",
 				success: function(res) {
 					self.datasource = res;
-					console.table(self.datasource)
+					// console.table(self.datasource)
 				},
 				error: function(err) {
 					console.log(err)
