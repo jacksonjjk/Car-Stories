@@ -46,7 +46,6 @@
 
 <script>
 	import './mui.min.css'
-	import './common.css'
 	import './NewCarComponent.css'
 	import $ from 'jquery'
 	//	import {mapActions} from "vuex";
