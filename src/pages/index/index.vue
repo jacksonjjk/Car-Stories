@@ -12,6 +12,8 @@
 			<div class="swiper-pagination"></div>
 		</div>
 		<div class="wrap"  v-for="key in data">
+		<router-link to="/newCarDetail">
+		    <a href="javascript:;">
 			<div class="carz_li">
 				<div class="carz_li_left">
 					<p class="carz_li_title">{{key.title}}</p>
@@ -23,6 +25,8 @@
 					<div class="clear"></div> 
 				</div>
 			</div>
+			</a>
+		</router-link>
 		</div>
 	</div>
 </template>
