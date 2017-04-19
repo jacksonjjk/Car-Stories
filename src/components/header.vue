@@ -4,8 +4,7 @@
     @navbg:#eee;
     @navcolor:#17adc1;
     *{padding:0; margin:0; list-style:none;}
-    body{overflow: hidden;}
-    .kinw_all{width:100%; position: relative;margin-bottom: 42px;}
+    .kinw_all{width:100%; position: relative; overflow:hidden; min-height:90px;}
     .kinw_header{
         width:100%; 
         height:50px; 
@@ -61,17 +60,18 @@
 		<div id="app">
         <div class="kinw_all">
             <div class="kinw_header"><h1 class="kinw_title">汽车风云</h1><span  @click="test"  class="kinw_search"></span></div>
+            <ul class="kinw_nav" v-on:touchstart="down" v-bind:style="{left:left}">
+                <li @touchend="mouse"><router-link to="/">首页</router-link></li>
+                <li @touchend="mouse"><router-link to="/movie">视频</router-link></li>
+                <li @touchend="mouse"><router-link to="/newcar">新车</router-link></li>
+                <li @touchend="mouse"><router-link to="/industry">行业</router-link></li>
+                <li @touchend="mouse"><router-link to="/guide">导购</router-link></li>
+                <li @touchend="mouse"><router-link to="/industry">头条客</router-link></li>
+                <li @touchend="mouse"><router-link to="/">用车</router-link></li>
+                <li @touchend="mouse"><router-link to="/movie">北京</router-link></li>
+            </ul>
         </div>
-        <ul class="kinw_nav" v-on:touchstart="down" v-bind:style="{left:left}">
-            <li><router-link to="/">首页</router-link></li>
-            <li><router-link to="/movie">视频</router-link></li>
-            <li><router-link to="/newcar">新车</router-link></li>
-            <li><router-link to="/industry">行业</router-link></li>
-            <li><router-link to="/guide">导购</router-link></li>
-            <li><router-link to="/industry">头条客</router-link></li>
-            <li><router-link to="/">用车</router-link></li>
-            <li><router-link to="/movie">北京</router-link></li>
-        </ul>
+        
         <div>
             <router-view></router-view>
         </div>
