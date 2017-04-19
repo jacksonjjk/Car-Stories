@@ -26,33 +26,33 @@
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> 回到日常，又是一天天上班、又是一月月发薪，你越来越恐慌。然后不停的告诫自己——别把碌碌无为当作平凡可贵，尤其是在你每次逛完淘宝、打完撸啊撸、刷完新美剧之后。 </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> 就当你浑浑噩噩还没活明白的时候，篇篇“10万+”教育着你——逃离北上广。他们说，你看北上广深、处处皆苟且：生活成本高、房价房租高、户籍门槛高、工作压力大、空气质量差、交通拥堵开车累...... </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> 看到这里，你怒摔手机、再也不信什么“10万+”，TM开车哪里累了？那是因为你们开错车了！ </p>
-						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/car1/img/20170414095518_28500.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
+						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095518_28500.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> 东风标致5008采用标致独有的i-Cockpit®座舱，为驾驶员提供了一个近乎未来主义的驾驶空间。 </p>
-						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/car1/img/20170414095538_29452.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
+						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095538_29452.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> 在环境照明强度和屏幕色彩的交互作用下产生视觉盛宴、调控音乐氛围创造听觉盛宴、座位多点按摩提供触觉盛宴、浓郁的香气扩散器提供嗅觉盛宴，i-Cockpit®驾驶座舱的交互体验理念正为用户带来视觉、听觉、触觉、嗅觉的全新愉悦驾驶体验。 </p>
-						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/car1/img/20170414095557_17868.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
+						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095557_17868.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> i-Cockpit® Amplify还带来了独一无二的驾驶体验，为驾乘者提供两种环境模式：一种是为动感驾驶设置的“强劲”氛围，一种是为安静放松驾驶设置的“放松”氛围，这两种环境均可定制，令驾驶体验更加丰富，瞬间直达所有感官。 </p>
-						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/car1/img/20170414095621_70113.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
+						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095621_70113.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> 来自高效EMP2模块化平台的东风标致5008，能够兼顾驾驶的舒适性和优良的操纵性，“T+G”黄金动力组合让你在任何路况途中，都能够体验真正的快乐。 </p>
-						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/car1/img/20170414095645_83099.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""><img src="http://localhost/car1/img/20170414095646_79353.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
+						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095645_83099.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""><img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095646_79353.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <span style="line-height: 1.5; font-size: 18px;">标致5008还搭载ADAS智能驾驶辅助功能，最大限度降低行驶风险，配有上坡辅助和坡道缓降系统（HADC）、自主紧急制动系统、车道保持辅助、驾驶员注意力警示辅助等一系列的成套安全设备。</span> </p>
-						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/car1/img/20170414095714_17050.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
+						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095714_17050.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> 当然，5008外形设计依然走新一代“标致设计”的“高颜值”路线，点阵式进气隔栅、狮眼大灯再配合狮爪尾灯，外观硬朗而时尚。 </p>
-						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/car1/img/20170414095734_11212.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
+						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095734_11212.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> 配备7个独立座椅，凭借2840mm轴距，具备更大的内部空间；2+3+2的座椅安排，5+2的灵动空间设计，可满足日常生活中各种挑战。 </p>
-						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/car1/img/20170414095801_28788.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""><img src="http://localhost/car1/img/20170414095802_31699.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
+						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095801_28788.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""><img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095802_31699.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> 无论是否逃离北上广，东风标致5008都将让你打破传统的外形束缚，在旅行中拥抱欢乐，追求空间的舒适性和实用性，满足你在工作和生活中的多面需求。 </p>
-						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/car1/img/20170414095830_44772.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
+						<p style="margin-bottom: 2%; overflow: hidden; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> <img src="http://localhost/Car-Stories/src/assets/dcimg/20170414095830_44772.jpg" alt="" style="width: 100%; vertical-align: bottom; margin-bottom: 0px; margin-top: 2%;" height=""> </p>
 						<p style="margin-bottom: 2%; word-wrap: break-word; width: 100%; color: rgb(51, 51, 51);"> 6月，东风标致5008将正式上市，说不定还有各种购车金融方案，因为TA不仅懂你眼前的苟且，也会为你找到诗和远方。 </p>
 					</div>
 				</div>
 				<div class="" style="text-align: center;">
-					<img src="http://localhost/car1/img/yuachuangbanquan@3x.png" width="80%"></div>
+					<img src="http://localhost/Car-Stories/src/assets/dcimg/yuachuangbanquan@3x.png" width="80%"></div>
 				<ul class="pic-list3">
 					<li>
 						<a href="/author/12757/1">
 							<span class="pic">
-	                        	<img src="http://localhost/car1/img/147867056388.jpg">
+	                        	<img src="http://localhost/Car-Stories/src/assets/dcimg/147867056388.jpg">
 	                    	</span>
 							<p class="txt"><span class="date">汽车头条</span></p>
 							<p class="title oP">汽车移动传播第一站</p>
@@ -69,7 +69,7 @@
 					</p>
 				</div>
 			</div>
-			
+
 			<div class="line_bg2" name="pinglun" id="pinglun"></div>
 			<div id="gotop" style="bottom: 74px; display: none;"></div>
 		</div>
@@ -79,7 +79,7 @@
 <script type="text/javascript">
 	import './common.css'
 	import './NewCarDetailComponent.css'
-	
+
 	export default {
 		name: 'newCarDetail'
 	}

@@ -10,7 +10,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, 
     background: transparent;
 }
 #gotop {
-    background: url(http://localhost/car1/img/top.png) no-repeat;
+    background: url(http://localhost/Car-Stories/src/assets/dcimg/top.png) no-repeat;
     background-size: 2.8rem;
     height: 2.8rem;
     width: 2.8rem;
