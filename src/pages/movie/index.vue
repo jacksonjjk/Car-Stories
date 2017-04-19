@@ -8,8 +8,8 @@
 	    	<router-link to="/videoDetail">
             <a href="#" target="_self" class="ui-link">
                 <div class="video_wrap">
-                    <img class="img" src="http://localhost://car1/img/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
-                    <span class="video_button2"><img src="http://localhost://car1/img/3.png"></span>
+                    <img class="img" src="http://localhost/Car-Stories/src/assets/dcimg/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
+                    <span class="video_button2"><img src="http://localhost/Car-Stories/src/assets/dcimg/3.png"></span>
                     <span class="video_time2">04:21</span>
                     <p class="word">你是球迷会买?名爵ZS利物浦特别版</p>
                 </div>
@@ -25,8 +25,8 @@
         <router-link to="/videoDetail">
             <a href="#" target="_self" class="ui-link">
                 <div class="video_wrap">
-                    <img class="img" src="http://localhost://car1/img/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
-                    <span class="video_button2"><img src="http://localhost://car1/img/3.png"></span>
+                    <img class="img" src="http://localhost/Car-Stories/src/assets/dcimg/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
+                    <span class="video_button2"><img src="http://localhost/Car-Stories/src/assets/dcimg/3.png"></span>
                     <span class="video_time2">04:21</span>
                     <p class="word">你是球迷会买?名爵ZS利物浦特别版</p>
                 </div>
@@ -42,8 +42,8 @@
         <router-link to="/videoDetail">
             <a href="#" target="_self" class="ui-link">
                 <div class="video_wrap">
-                    <img class="img" src="http://localhost://car1/img/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
-                    <span class="video_button2"><img src="http://localhost://car1/img/3.png"></span>
+                    <img class="img" src="http://localhost/Car-Stories/src/assets/dcimg/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
+                    <span class="video_button2"><img src="http://localhost/Car-Stories/src/assets/dcimg/3.png"></span>
                     <span class="video_time2">04:21</span>
                     <p class="word">你是球迷会买?名爵ZS利物浦特别版</p>
                 </div>
