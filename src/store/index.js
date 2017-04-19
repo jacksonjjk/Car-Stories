@@ -53,7 +53,6 @@ const store ={
                 data: '',
                 success:function(response){ 
                     var arr = JSON.parse(response);                   
-                    // console.log(response);
                     commit("SB",arr);                
                 }
             })
@@ -65,16 +64,14 @@ const store ={
                 data: '',
                 success:function(response){ 
                     var arr = JSON.parse(response);                
-                    // console.log(response);
                     commit("DSB",arr);                  
                 }
             })
         },
         data_index({commit}){
             console.log(2)
-            $.get("http://localhost/car1/test2.php",function(res){
+            $.get("http://localhost/Car-Stories/php/k_p.php",function(res){
                 var res = JSON.parse(res);
-                // console.log(res)
                 commit("dataIndex",res)
             })
         }
@@ -102,36 +99,3 @@ export default new Vuex.Store({
         store
     }
 })
-
-
-// import store from '../store/index.js'
-// import http from '../utils/HttpClient.js'
-// import $ from 'jquery'
-// const SHOW_USER = 'SHOW_USER'
-// export default {
-     
-//     [SHOW_USER] (state,value) {
-//         console.log("账户："+value.username,value.password)
-//         state.username = value.username;
-//         state.password = value.password;
-//     },
-//     login({commit},obj){ 
-//         $.ajax({
-//             url: 'http://localhost/VUE/demo0415/vue-login-master/src/php/login.php',
-//             type: 'POST',
-//             data: {username: obj.username,password:obj.password},
-//             success:function(response){
-                
-//                 console.log(response);
-//                 if(response == 'login succeed'){
-//                     location.href='http://localhost:8080/'
-//                 }
-                
-
-
-//             }
-//         })
-
-        
-//     },
-// }

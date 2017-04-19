@@ -5,14 +5,13 @@
 	</v-header>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide"><li><img src="http://localhost/car1/img/1491991450054.jpg"></li></div>
-				<div class="swiper-slide"><li><img src="http://localhost/car1/img/1492158278512.jpg"></li></div>
-				<div class="swiper-slide"><li><img src="http://localhost/car1/img/1492154369790.jpg"></li></div>
+				<div class="swiper-slide"><li><img src="http://localhost/Car-Stories/src/assets/k_img/1491991450054.jpg"></li></div>
+				<div class="swiper-slide"><li><img src="http://localhost/Car-Stories/src/assets/k_img/1492158278512.jpg"></li></div>
+				<div class="swiper-slide"><li><img src="http://localhost/Car-Stories/src/assets/k_img/1492154369790.jpg"></li></div>
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
-		<div class="wrap"  v-for="key in data"	>
-			<!--<div class="carz">2017 上海</div>-->
+		<div class="wrap"  v-for="key in data">
 			<div class="carz_li">
 				<div class="carz_li_left">
 					<p class="carz_li_title">{{key.title}}</p>
@@ -20,26 +19,10 @@
 					<div class="clear"></div> 
 				</div>
 				<div class="carz_li_right">
-					<img :src="'http://localhost/car1/img/'+key.img">
+					<img :src="'http://localhost/Car-Stories/src/assets/k_img/'+key.img">
 					<div class="clear"></div> 
 				</div>
 			</div>
-			<!--<p class="word">追求你的真实态度，一起上头条，人人都是头条客！
-				<div class="clear"></div> 
-			</p>-->
-			<!--<div class="word_middle">
-				<img src="http://localhost/car1/img/1492158278512.jpg" style="width:110px;">
-				<img src="http://localhost/car1/img/1492156805239.jpg" style="width:110px; margin: 0 10px;">
-				<img src="http://localhost/car1/img/1492154369790.jpg" style="width:110px;">
-				<div class="clear"></div> 
-			</div>-->
-			<!--<p class="word_bottom">
-				<span class="fixtop">置顶</span>
-				<span>汽车头条</span>
-				<span class="date">04-14</span>
-				<span class="bpl">评论(0)</span>
-				<div class="clear"></div> 
-			</p>-->
 		</div>
 	</div>
 </template>
