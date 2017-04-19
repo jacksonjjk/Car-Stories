@@ -1,28 +1,71 @@
 <template>
 	<div>
-	<v-header title="汽车风云">
-			<router-link slot="right" to="/search">搜索</router-link>
-		</v-header>
-		<div>
-        <h2>行业内容</h2>
-		<h3>{{ countAnother }}</h3>
-		</div>
-	</div>
+    <v-header title="汽车风云">
+            <router-link slot="right" to="/search">搜索</router-link>
+    </v-header>
+	    <ul class="pic-list">
+	    	<li class="video_list2">
+	    	<router-link to="/videoDetail">
+            <a href="#" target="_self" class="ui-link">
+                <div class="video_wrap">
+                    <img class="img" src="http://localhost/Car-Stories/src/assets/dcimg/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
+                    <span class="video_button2"><img src="http://localhost/Car-Stories/src/assets/dcimg/3.png"></span>
+                    <span class="video_time2">04:21</span>
+                    <p class="word">你是球迷会买?名爵ZS利物浦特别版</p>
+                </div>
+                <p class="txt">
+                    <span class="hit">135次播放</span>
+                    <span class="date">汽车风云</span>
+                </p>
+            </a>
+	    	</router-link>
+        </li>
+
+        <li class="video_list2">
+        <router-link to="/videoDetail">
+            <a href="#" target="_self" class="ui-link">
+                <div class="video_wrap">
+                    <img class="img" src="http://localhost/Car-Stories/src/assets/dcimg/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
+                    <span class="video_button2"><img src="http://localhost/Car-Stories/src/assets/dcimg/3.png"></span>
+                    <span class="video_time2">04:21</span>
+                    <p class="word">你是球迷会买?名爵ZS利物浦特别版</p>
+                </div>
+                <p class="txt">
+                    <span class="hit">135次播放</span>
+                    <span class="date">汽车风云</span>
+                </p>
+            </a>
+        </router-link>
+        </li>
+
+        <li class="video_list2">
+        <router-link to="/videoDetail">
+            <a href="#" target="_self" class="ui-link">
+                <div class="video_wrap">
+                    <img class="img" src="http://localhost/Car-Stories/src/assets/dcimg/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
+                    <span class="video_button2"><img src="http://localhost/Car-Stories/src/assets/dcimg/3.png"></span>
+                    <span class="video_time2">04:21</span>
+                    <p class="word">你是球迷会买?名爵ZS利物浦特别版</p>
+                </div>
+                <p class="txt">
+                    <span class="hit">135次播放</span>
+                    <span class="date">汽车风云</span>
+                </p>
+            </a>
+        </router-link>
+        </li>
+	    </ul>
+    </div>
 </template>
 
-<script>
+<script type="text/javascript">
+	import './VideoComponent.css'
 
-    // import {mapState} from "vuex";
-    export default {
-        computed: {
-            countAnother: function () {  // 获取state
-                if(this.$store.getters.haha==''){
-                    this.$store.dispatch("download2");
-                }
-                return this.$store.getters.haha;
-            }
-        }
-    }
+	// import VueRouter from '../../router/index'
 
 
+
+	export default {
+		name: 'video'
+	}
 </script>
