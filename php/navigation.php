@@ -2,27 +2,47 @@
 header("Access-Control-Allow-Origin: http://localhost:3000");
 class Goods{
     public $index_id;
-    public $price;
-    public $introduction;
+    public $liClass;
+    public $title;
     public $img;
+    public $bor;
+    public $type;
+    public $date;
+    public $comment;
 }
 
-$con = new mysqli("127.0.0.1","root","","okbuy") or die("连接失败!");
+$con = new mysqli("127.0.0.1","root","","car") or die("连接失败!");
 
 $con->query("set names utf8");
 
-$sql = "select * from indexgoods";
+$sql = "select * from navigation";
 $result = $con->query($sql);
 if($result->num_rows > 0){
 
     $arr = array();
     while($row = $result->fetch_assoc()){
+        $leng = strlen($row["img"]);
+        $img1 = $row["img"];
         $goods = new Goods();
         $goods->index_id = $row["index_id"];
-        $goods->price = $row["price"];
-        $goods->introduction = $row["introduction"];
-        $goods->img = $row["img"];
-
+        $goods->liClass = $row["liClass"];
+        $goods->title = $row["title"];
+        
+        if($img1[$leng-1]!=="g"){
+            $goods->img = $row["img"].".jpg";
+        }else{
+            $goods->img = $row["img"];
+        }
+        $txt = explode(',', $row["txt"]);
+        if(count($txt)===3){
+            $goods->bor = null;
+        }else{
+            $goods->bor = $txt[1];
+        }
+        $goods->type = $txt[count($txt)-2];
+        $goods->date = $txt[count($txt)-1];
+        $goods->comment = $txt[0];
+        
         array_push($arr, $goods);
     }
 

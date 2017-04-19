@@ -48,7 +48,7 @@ const store ={
         },
         download({commit}){
             $.ajax({
-                url: 'http://localhost/Car-Stories/navigation.php',
+                url: 'http://localhost/Car-Stories/php/navigation.php',
                 type: 'GET',
                 data: '',
                 success:function(response){ 
