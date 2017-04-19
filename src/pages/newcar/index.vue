@@ -62,7 +62,7 @@
 			let self = this;
 			$.ajax({
 				type: "get",
-				url: "http://localhost/car1/test2.php",
+				url: "http://localhost/Car-Stories/php/test2.php",
 				dataType: "json",
 				success: function(res) {
 					self.datasource = res;
