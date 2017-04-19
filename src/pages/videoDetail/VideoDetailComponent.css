@@ -1,0 +1,74 @@
+html{font-size:20px;}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a{
+	text-decoration: none;
+}
+img{
+	width: 100%;
+    vertical-align: top;
+}
+
+ul{
+	list-style: none;
+}
+
+.clear{
+	zoom:1;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/**/
+.details_wrap {
+    padding: 2%;
+}
+
+.details_wrap .title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.details_wrap p .hit {
+    font-size: 0.6rem;
+    color: #999;
+    display: inline-block;
+    float: right;
+}
+.clearfix .praise {
+    float: right;
+    margin-right: 0.25rem;
+    font-size: 0.6rem;
+}
+
+.clearfix #praise_num {
+    display: inline-block;
+    color: #999;
+    font-weight: 100;
+    vertical-align: middle;
+}
+.clearfix #video_praise_btn {
+    width: 0.75rem;
+    margin-left: 0.25rem;
+    margin-top: -0.25rem;
+    vertical-align: middle;
+}
+.details_wrap p .date {
+    font-size: 0.6rem;
+    color: #999;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+}

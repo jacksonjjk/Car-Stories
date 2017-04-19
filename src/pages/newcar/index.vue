@@ -7,7 +7,7 @@
 			<ul>
 				<li class="li_height">
 					<a href="javascript:;" target="_self" class="ui-link">
-						<img src="http://localhost/car1/img/1491962157159.jpg">
+						<img src="http://localhost/Car-Stories/src/assets/dcimg/1491962157159.jpg">
 						<span class="text oP">
 	              <i class="elli">长着SUV脸的小型车 新款MG3假想图</i>
 	            </span>
@@ -22,7 +22,7 @@
 					<router-link to="/newCarDetail">
 						<a href="javascript:;">
 							<!--<img class="mui-media-object mui-pull-right" v-bind:src="'../../assets/img/'+item.img">-->
-							<img class="mui-media-object mui-pull-right" v-bind:src="'http://localhost/car1/img/'+item.img">
+							<img class="mui-media-object mui-pull-right" v-bind:src="'http://localhost/Car-Stories/src/assets/dcimg/'+item.img">
 							<div class="mui-media-body">
 								<p>
 										{{item.title}}

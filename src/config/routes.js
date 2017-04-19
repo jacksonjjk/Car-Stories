@@ -31,6 +31,11 @@ export default [
                 component: resolve => require(['../pages/movie/'], resolve)
             },
             {
+                path: '/videoDetail', //视频
+                meta: { auth: false },
+                component: resolve => require(['../pages/videoDetail/'], resolve)
+            },
+            {
                 path: '/newcar', //新车
                 meta: { auth: false },
                 component: resolve => require(['../pages/newcar/'], resolve)
