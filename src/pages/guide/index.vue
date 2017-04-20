@@ -1,11 +1,12 @@
 <template>
   <div style="height: 100%;">
     <div id="app" style="height: 100%;">
-      <div id="wrapper" style="height: 100%;">
+    <v-header title="汽车风云">
+        <router-link slot="right" to="/search">搜索</router-link>
+    </v-header>
+      <div id="wrapper" style="height: calc(100% - 5.625rem) ">
         <div id="scroller">
-          <v-header title="汽车风云">
-              <router-link slot="right" to="/search">搜索</router-link>
-          </v-header>
+          
           <ul class="lists">
             <li v-for="(item,index) in msg">
               <a class="lists_a clearfix" href="#">
