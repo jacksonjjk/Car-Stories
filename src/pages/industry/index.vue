@@ -7,9 +7,11 @@
         <div class="content">
             <ul class="mui-table-view">
                 <li class="mui-table-view-cell mui-media" v-for="(item,index) in datasource">
+                <router-link to="/videoDetail">
                         <a href="javascript:;">
                             <img class="motorpc" v-bind:src="'http://localhost/Car-Stories/src/assets/motor/'+item.img">
                         </a>
+                </router-link>
                 </li>
             </ul>
         </div>
