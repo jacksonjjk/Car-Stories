@@ -64,7 +64,7 @@
                 <li @touchend="mouse"><router-link to="/">首页</router-link></li>
                 <li @touchend="mouse"><router-link to="/movie">视频</router-link></li>
                 <li @touchend="mouse"><router-link to="/newcar">新车</router-link></li>
-                <li @touchend="mouse"><router-link to="/industry">行业</router-link></li>
+                <li @touchend="mouse"><router-link to="/industry">美女车模</router-link></li>
                 <li @touchend="mouse"><router-link to="/guide">导购</router-link></li>
                 <li @touchend="mouse"><router-link to="/industry">头条客</router-link></li>
                 <li @touchend="mouse"><router-link to="/">用车</router-link></li>
