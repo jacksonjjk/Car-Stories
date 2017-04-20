@@ -33,7 +33,6 @@ const store ={
         },
         dataIndex(state,value){
             state.data_index = value
-            console.log(1)
         }
     },
     actions: {
@@ -69,7 +68,6 @@ const store ={
             })
         },
         data_index({commit}){
-            console.log(2)
             $.get("http://localhost/Car-Stories/php/k_p.php",function(res){
                 var res = JSON.parse(res);
                 commit("dataIndex",res)
@@ -87,7 +85,6 @@ const store ={
             return state.dsb
         },
         dataIndex:function(state){
-            console.log(3)
             return state.data_index
         }
     }

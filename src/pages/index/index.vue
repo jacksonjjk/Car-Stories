@@ -28,12 +28,13 @@
 			</a>
 		</router-link>
 		</div>
+		<goto :keywordMode = "vi" v-on:restTop="Top"></goto>
 	</div>
 </template>
 
 
 <style lang="less">
-	@maincolor:#17adc1;
+	@maincolor:black;
 	.clear{ clear:both} 
 	.wrap{width:22.5rem; margin:0 auto;}
 	v-header{float:left;}
@@ -125,11 +126,16 @@
  import './swiper.min.css';
  import "./swiper.min.js";
  import {mapActions} from "vuex";
+ import Goto from "../restTop/restTop.vue";
 
  export default {
+	components:{
+		Goto
+	},
 	data(){
 		return {
-			data:''
+			data:'',
+			vi:0
 		}
 	},
 	created(){
@@ -145,6 +151,19 @@
 		setTimeout(function(){
 			this.$set(this.$data, 'data', this.$store.getters.dataIndex)
 		}.bind(this),100)
+		console.log(Goto)
+
+		document.addEventListener("touchmove",function(e){
+			this.$data.vi = document.body.scrollTop;
+			console.log(this.$data.vi)
+		}.bind(this))
+	},
+	methods:{
+		Top:function(a){
+			if(a){
+				this.$data.vi = 0;
+			}
+		}
 	}	
  }
 </script>
