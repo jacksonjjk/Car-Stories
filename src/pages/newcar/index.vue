@@ -21,7 +21,6 @@
 				<li class="mui-table-view-cell mui-media" v-for="(item,index) in datasource">
 					<router-link to="/newCarDetail">
 						<a href="javascript:;">
-							<!--<img class="mui-media-object mui-pull-right" v-bind:src="'../../assets/img/'+item.img">-->
 							<img class="mui-media-object mui-pull-right" v-bind:src="'http://localhost/Car-Stories/src/assets/dcimg/'+item.img">
 							<div class="mui-media-body">
 								<p>
@@ -39,7 +38,7 @@
 				</li>
 			</ul>
 		</div>
-		<div id="gotop" style="bottom: 74px; display: none;">{name}</div>
+		<goto :keywordMode = "vi" v-on:restTop="Top"></goto>
 
 	</div>
 </template>
@@ -49,11 +48,21 @@
 	import './NewCarComponent.css'
 	import $ from 'jquery'
 	//	import {mapActions} from "vuex";
+	import Goto from "../restTop/restTop.vue";
+
+
+
+
+
 
 	export default {
+		components:{
+		Goto
+	},
 		name: 'newcar',
 		data: function() {
 			return {
+				vi:0,
 				datasource: []
 			}
 		},
@@ -74,7 +83,20 @@
 					console.log("请求完成")
 				}
 			})
-		}
+		},
+		mounted(){
+				document.addEventListener("touchmove",function(e){
+				this.$data.vi = document.body.scrollTop;
+			}.bind(this))
+			},
+			methods:{
+					Top:function(a){
+					if(a){
+						this.$data.vi = 0;
+					}
+				}
+			}
+
 
 	}
 </script>
