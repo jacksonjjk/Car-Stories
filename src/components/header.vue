@@ -11,6 +11,8 @@
         background:@background;
         .kinw_title{
             float: left;
+            height: 3.125rem;
+            line-height: 3.125rem;
             color:@color;
             left:0;
             right:0;
