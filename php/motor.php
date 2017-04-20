@@ -7,8 +7,7 @@ class Goods{
     public $img;
 
 }
-
-$con = new mysqli("127.0.0.1","root","","car") or die("连接失败!");
+require 'index.php';
 
 $con->query("set names utf8");
 

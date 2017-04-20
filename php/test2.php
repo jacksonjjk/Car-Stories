@@ -10,8 +10,7 @@ class Goods{
     public $txt;
 }
 
-$con = new mysqli("127.0.0.1","root","","car") or die("连接失败!");
-
+require 'index.php';
 $con->query("set names utf8");
 
 $sql = "select * from newCar";
