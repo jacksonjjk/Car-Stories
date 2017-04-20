@@ -35,6 +35,7 @@
 
 <style lang="less">
 	@maincolor:black;
+	@yccolor:#4bbfe1;
 	.clear{ clear:both} 
 	.wrap{width:22.5rem; margin:0 auto;}
 	v-header{float:left;}
