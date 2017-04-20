@@ -18,11 +18,11 @@
 				<div class="carz_li_left">
 					<p class="carz_li_title">{{key.title}}</p>
 					<p class="carz_li_hot"><span class="yc">原创</span><span class="cartitle">汽车头条 11分钟前</span><span class="pl">评论(0)</span></p>
-					<div class="clear"></div> 
+					<div class="clear"></div>
 				</div>
 				<div class="carz_li_right">
 					<img :src="'http://localhost/Car-Stories/src/assets/k_img/'+key.img">
-					<div class="clear"></div> 
+					<div class="clear"></div>
 				</div>
 			</div>
 			</a>
@@ -36,12 +36,12 @@
 <style lang="less">
 	@maincolor:black;
 	@yccolor:#4bbfe1;
-	.clear{ clear:both} 
+	.clear{ clear:both}
 	.wrap{width:22.5rem; margin:0 auto;}
 	v-header{float:left;}
 	*{margin:0; padding:0; list-style: none;}
 	.blannr{
-		width:100%;	
+		width:100%;
 		/*margin-top:3.125rem;*/
 		img{
 			width:100%;
@@ -59,12 +59,12 @@
 				margin-bottom:0.625rem;
 			.carz_li_left{
 				width:14.6875rem;
-				font-size:0.875rem;
+				font-size:1rem;
 				float:left;
 				color:@maincolor;
 				.carz_li_title{
 					height:3.0rem;
-					margin-bottom:20px;					
+					margin-bottom:20px;
 				}
 				.carz_li_hot{
 					span{
@@ -73,7 +73,8 @@
 					font-size:0.75rem;
 					.yc{
 						height:0.875rem;
-						border:1px solid @maincolor;
+						border:1px solid @yccolor;
+						color:@yccolor;
 						margin-right: 0.625rem;
 					}
 					.cartitle{
@@ -93,7 +94,7 @@
 			}
 		}
 	}
-	.word{	width:100%; 
+	.word{	width:100%;
 		  	float:left;
 			color:@maincolor;
 	}
@@ -120,7 +121,7 @@
 			.bpl{
 				float: right;
 			}
-	}	
+	}
 </style>
 
 <script>
@@ -165,6 +166,6 @@
 				this.$data.vi = 0;
 			}
 		}
-	}	
+	}
  }
 </script>
