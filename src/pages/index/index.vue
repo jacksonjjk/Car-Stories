@@ -37,7 +37,7 @@
 	@maincolor:black;
 	@yccolor:#4bbfe1;
 	.clear{ clear:both}
-	.wrap{width:22.5rem; margin:0 auto;}
+	.wrap{width:22.5rem; margin:0 auto; margin-top: 0.625rem;}
 	v-header{float:left;}
 	*{margin:0; padding:0; list-style: none;}
 	.blannr{
@@ -154,11 +154,9 @@
 		setTimeout(function(){
 			this.$set(this.$data, 'data', this.$store.getters.dataIndex)
 		}.bind(this),200)
-		console.log(Goto)
 
 		document.addEventListener("touchmove",function(e){
 			this.$data.vi = document.body.scrollTop;
-			console.log(this.$data.vi)
 		}.bind(this))
 	},
 	methods:{
