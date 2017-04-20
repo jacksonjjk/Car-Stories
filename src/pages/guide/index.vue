@@ -1,13 +1,15 @@
 <template>
   <div style="height: 100%;">
     <div id="app" style="height: 100%;">
-      <div id="wrapper" style="height: 100%;">
+    <v-header title="汽车风云">
+        <router-link slot="right" to="/search">搜索</router-link>
+    </v-header>
+      <div id="wrapper" style="height: calc(100% - 5.625rem) ">
         <div id="scroller">
-          <v-header title="汽车风云">
-              <router-link slot="right" to="/search">搜索</router-link>
-          </v-header>
+          
           <ul class="lists">
             <li v-for="(item,index) in msg">
+            <router-link to="/newCarDetail">
               <a class="lists_a clearfix" href="#">
                 <div class="g_text">
                   <p>{{item.title}}</p>
@@ -20,6 +22,7 @@
                 </div>
                 <img class="g_img" v-bind:src="'http://localhost/Car-Stories/src/assets/jy_img/'+item.img">
               </a>
+              </router-link>
             </li>
           </ul>
           <div id="pullUp">
