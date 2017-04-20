@@ -76,7 +76,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, 
 .mui-table-view li a{height: 5rem;}
 .mui-table-view .mui-media-body p{
     height: 3.64rem;
-    line-height: 1.32rem;
+    line-height: 1rem;
     white-space: pre-line;
     overflow: hidden;
 
