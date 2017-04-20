@@ -65,16 +65,20 @@
 					margin-bottom:20px;					
 				}
 				.carz_li_hot{
+					span{
+						float:left;
+					}
 					font-size:0.75rem;
 					.yc{
 						height:0.875rem;
 						border:1px solid @maincolor;
+						margin-right: 0.625rem;
 					}
 					.cartitle{
-						margin-left:2.5rem;
+						margin-right: 0.625rem;
 					}
 					.pl{
-						margin-left:1.5625rem;
+						float:right;
 					}
 				}
 			}
