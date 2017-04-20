@@ -91,10 +91,13 @@
 			},
 			methods:{
 					Top:function(a){
-					if(a){
-						this.$data.vi = 0;
+						var self=this;
+						setTimeout(function(){
+							if(a){
+								self.$data.vi = 0;
+							}
+						},500)
 					}
-				}
 			}
 
 
