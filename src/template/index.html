@@ -11,6 +11,14 @@
 	<div id="app" style="height: 100%;">
 		<router-view></router-view>
 	</div>
+	<script>
+		function htmlFontSize(){
+			var htmlFontSize = document.getElementsByTagName('html')[0];
+			htmlFontSize.style.fontSize = window.innerWidth/23.4375 + "px";
+		}
+		htmlFontSize();
+		window.addEventListener('resize',htmlFontSize);
+	</script>
 </body>
 
 </html>

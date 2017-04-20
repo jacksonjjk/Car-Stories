@@ -1,71 +1,58 @@
 <template>
-	<div>
-    <v-header title="汽车风云">
+    <div>
+        <v-header title="汽车风云">
             <router-link slot="right" to="/search">搜索</router-link>
-    </v-header>
-	    <ul class="pic-list">
-	    	<li class="video_list2">
-	    	<router-link to="/videoDetail">
-            <a href="#" target="_self" class="ui-link">
-                <div class="video_wrap">
-                    <img class="img" src="http://localhost/Car-Stories/src/assets/dcimg/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
-                    <span class="video_button2"><img src="http://localhost/Car-Stories/src/assets/dcimg/3.png"></span>
-                    <span class="video_time2">04:21</span>
-                    <p class="word">你是球迷会买?名爵ZS利物浦特别版</p>
-                </div>
-                <p class="txt">
-                    <span class="hit">135次播放</span>
-                    <span class="date">汽车风云</span>
-                </p>
-            </a>
-	    	</router-link>
-        </li>
+        </v-header>
 
-        <li class="video_list2">
-        <router-link to="/videoDetail">
-            <a href="#" target="_self" class="ui-link">
-                <div class="video_wrap">
-                    <img class="img" src="http://localhost/Car-Stories/src/assets/dcimg/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
-                    <span class="video_button2"><img src="http://localhost/Car-Stories/src/assets/dcimg/3.png"></span>
-                    <span class="video_time2">04:21</span>
-                    <p class="word">你是球迷会买?名爵ZS利物浦特别版</p>
-                </div>
-                <p class="txt">
-                    <span class="hit">135次播放</span>
-                    <span class="date">汽车风云</span>
-                </p>
-            </a>
-        </router-link>
-        </li>
+        <div class="content">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell mui-media" v-for="(item,index) in datasource">
+                    <router-link to="/newCarDetail">
+                        <a href="javascript:;">
+                            <img class="motorpc" v-bind:src="'http://localhost/Car-Stories/src/assets/motor/'+item.img">
+                        </a>
+                    </router-link>
+                </li>
+            </ul>
+        </div>
 
-        <li class="video_list2">
-        <router-link to="/videoDetail">
-            <a href="#" target="_self" class="ui-link">
-                <div class="video_wrap">
-                    <img class="img" src="http://localhost/Car-Stories/src/assets/dcimg/FqcRMlPj7InH5MG0_X6gVZvBht9F.jpg">
-                    <span class="video_button2"><img src="http://localhost/Car-Stories/src/assets/dcimg/3.png"></span>
-                    <span class="video_time2">04:21</span>
-                    <p class="word">你是球迷会买?名爵ZS利物浦特别版</p>
-                </div>
-                <p class="txt">
-                    <span class="hit">135次播放</span>
-                    <span class="date">汽车风云</span>
-                </p>
-            </a>
-        </router-link>
-        </li>
-	    </ul>
     </div>
 </template>
 
-<script type="text/javascript">
-	import './VideoComponent.css'
+<script>
+    import $ from 'jquery'
+    //  import {mapActions} from "vuex";
 
-	// import VueRouter from '../../router/index'
+    export default {
+        data: function() {
+            return {
+                datasource: []
+            }
+        },
+        created: function() {
+            let self = this;
+            $.ajax({
+                type: "get",
+                url: "http://localhost/Car-Stories/php/motor.php",
+                dataType: "json",
+                success: function(res) {
+                    self.datasource = res;
+                    // console.table(self.datasource)
+                },
+                error: function(err) {
+                    console.log(err)
+                },
+                complete: function() {
+                    console.log("请求完成")
+                }
+            })
+        }
 
-
-
-	export default {
-		name: 'video'
-	}
+    }
 </script>
+<style>
+    .motorpc{
+        width: 100%;
+        height: 50%;
+    }
+</style>
