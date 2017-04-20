@@ -1,5 +1,8 @@
 <template>
 	<div>
+	<v-header title="汽车风云">
+			<router-link slot="right" to="/search">搜索</router-link>
+	</v-header>
 	    <div class="cont_wrap">
 			<div id="Q">
 				<div class="details_wrap">

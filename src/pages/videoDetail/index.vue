@@ -12,6 +12,7 @@
 				<span class="date">视频来源：腾讯汽车</span>
 			</p>
 		</div>
+		<router-link to="/movie">返回</router-link>
 	</div>
 </template>
 
