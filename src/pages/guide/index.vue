@@ -9,6 +9,7 @@
           
           <ul class="lists">
             <li v-for="(item,index) in msg">
+            <router-link to="/newCarDetail">
               <a class="lists_a clearfix" href="#">
                 <div class="g_text">
                   <p>{{item.title}}</p>
@@ -21,6 +22,7 @@
                 </div>
                 <img class="g_img" v-bind:src="'http://localhost/Car-Stories/src/assets/jy_img/'+item.img">
               </a>
+              </router-link>
             </li>
           </ul>
           <div id="pullUp">
