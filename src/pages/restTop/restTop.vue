@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="gotop" style="bottom: 74px; display: block;" v-on:touchstart="restTop" v-show="keywordMode > 1000"></div>
+        <div id="gotop" style="bottom: 74px; display: block;" v-on:touchstart.stop="restTop" v-show="keywordMode > 1000"></div>
     </div>
 </template>
 
@@ -10,7 +10,7 @@
         background-size: 2.3rem;
         height: 2.3rem;
         width: 2.3rem;
-        position: fixed;    
+        position: fixed;
         right: 2.3rem;
         display: inline-block;
         z-index: 9999;
