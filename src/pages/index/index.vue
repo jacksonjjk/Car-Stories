@@ -147,13 +147,13 @@
 			pagination : '.swiper-pagination',
 			//pagination : '#swiper-pagination1',
 			})
-		},100)
+		},200)
 		this.$store.dispatch('data_index');
 	},
 	mounted(){
 		setTimeout(function(){
 			this.$set(this.$data, 'data', this.$store.getters.dataIndex)
-		}.bind(this),100)
+		}.bind(this),200)
 		console.log(Goto)
 
 		document.addEventListener("touchmove",function(e){
