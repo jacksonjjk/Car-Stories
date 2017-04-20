@@ -35,51 +35,51 @@
 <style lang="less">
 	@maincolor:#17adc1;
 	.clear{ clear:both} 
-	.wrap{width:360px; margin:0 auto;}
+	.wrap{width:22.5rem; margin:0 auto;}
 	v-header{float:left;}
 	*{margin:0; padding:0; list-style: none;}
 	.blannr{
 		width:100%;	
-		/*margin-top:50px;*/
+		/*margin-top:3.125rem;*/
 		img{
 			width:100%;
 		}
 		.carz{
-			height:30px;
-			line-height: 30px;
+			height:1.875rem;
+			line-height: 1.875rem;
 			color:@maincolor;
 			border-bottom:1px solid #ccc;
 		}
 		.carz_li{
 				width:100%;
-				height:100px;
+				height:6.25rem;
 				border-bottom: 1px solid #ccc;
-				margin-bottom:10px;
+				margin-bottom:0.625rem;
 			.carz_li_left{
-				width:235px;
-				font-size:14px;
+				width:14.6875rem;
+				font-size:0.875rem;
 				float:left;
 				color:@maincolor;
 				.carz_li_title{
-					height:48px;
+					height:3.0rem;
 					margin-bottom:20px;					
 				}
 				.carz_li_hot{
-					font-size:12px;
+					font-size:0.75rem;
 					.yc{
-						height:14px;
+						height:0.875rem;
 						border:1px solid @maincolor;
 					}
 					.cartitle{
-						margin-left:40px;
+						margin-left:2.5rem;
 					}
 					.pl{
-						margin-left:25px;
+						margin-left:1.5625rem;
 					}
 				}
 			}
 			.carz_li_right{
-				width:110px;
+				width:6.875rem;
 				float:right;
 				.carz_li_right>img{
 					width:100%;
@@ -94,22 +94,22 @@
 	.word_middle{
 			width:100%;
 			float: left;
-			margin-top:10px;
+			margin-top:0.625rem;
 	}
 	.word_bottom{
 			width:100%;
-			height:24px;
-			font-size:12px;
-			line-height: 24px;
+			height:1.5rem;
+			font-size:0.75rem;
+			line-height: 1.5rem;
 			float: left;
 			border-bottom:1px solid #ccc;
 			.fixtop{
-				height:14px;
+				height:0.875rem;
 				color:@maincolor;
 				border:1px solid @maincolor;
 			}
 			.date{
-				margin-left:10px;
+				margin-left:0.625rem;
 			}
 			.bpl{
 				float: right;

@@ -1,34 +1,34 @@
 <template>
   <div style="height: 100%;">
-  <v-header title="汽车风云">
-      <router-link slot="right" to="/search">搜索</router-link>
-  </v-header>
-  <div id="app" style="height: 100%;">
-    <div id="wrapper" style="height: 100%;">
-      <div id="scroller">
-        <ul class="lists">
-          <li v-for="(item,index) in msg">
-            <a class="lists_a clearfix" href="#">
-              <div class="g_text">
-                <p>{{item.title}}</p>
-                <div class="g_txt clearfix">
-                  <span class="yuanchuang" v-if="item.bor">{{item.bor}}</span>
-                  <span class="toutiao">{{item.type}}</span>
-                  <span class="date">{{item.date}}</span>
-                  <span class="Comments">{{item.comment}}</span>
+    <div id="app" style="height: 100%;">
+      <div id="wrapper" style="height: 100%;">
+        <div id="scroller">
+          <v-header title="汽车风云">
+              <router-link slot="right" to="/search">搜索</router-link>
+          </v-header>
+          <ul class="lists">
+            <li v-for="(item,index) in msg">
+              <a class="lists_a clearfix" href="#">
+                <div class="g_text">
+                  <p>{{item.title}}</p>
+                  <div class="g_txt clearfix">
+                    <span class="yuanchuang" v-if="item.bor">{{item.bor}}</span>
+                    <span class="toutiao">{{item.type}}</span>
+                    <span class="date">{{item.date}}</span>
+                    <span class="Comments">{{item.comment}}</span>
+                  </div>
                 </div>
-              </div>
-              <img class="g_img" v-bind:src="'http://localhost/Car-Stories/src/assets/jy_img/'+item.img">
-            </a>
-          </li>
-        </ul>
-        <div id="pullUp">
-          <span class="pullUpLabel">加载中</span>
+                <img class="g_img" v-bind:src="'http://localhost/Car-Stories/src/assets/jy_img/'+item.img">
+              </a>
+            </li>
+          </ul>
+          <div id="pullUp">
+            <span class="pullUpLabel">加载中</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -95,7 +95,7 @@ ul,li{
 }
 body,html{
   height: 100%;
-  font-size: 0.8rem;
+  font-size: 1.0rem;
 }
 a{
   color: #333;
@@ -113,19 +113,19 @@ a{
 }
 .lists li{
   width: 100%;
-  height: 5.3rem;
+  height: 6.625rem;
 }
 .lists .lists_a{
   display: block;
-  width: 18.0rem;
-  height: 5.3rem;
+  width: 22.5rem;
+  height: 6.625rem;
   margin: 0 auto;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ddd;
+  padding: 0.625rem 0;
+  border-bottom: 0.0625rem solid #ddd;
 }
 .g_text{
   float: left;
-  width: 11.75rem;
+  width: 14.6875rem;
 }
 .g_text p{
   overflow:hidden; 
@@ -134,33 +134,34 @@ a{
   -webkit-line-clamp:2; 
 }
 .g_txt{
-  margin-top: 1.25rem;
-  font-size: 0.6rem;
+  margin-top: 1.5625rem;
+  font-size: 0.75rem;
   color: #999;
 }
 .g_txt span{
-  margin-right: 0.25rem;
+  margin-right: 0.3125rem;
 }
 .yuanchuang{
   float: left;
   display: block;
-  width: 1.4rem;
-  height: 1.0rem;
+  width: 2.2rem;
+  height: 1.25rem;
   color: #4bbfe1;
   border: 1px solid #4bbfe1;
   text-align: center;
+
 }
 .Comments{
   float: right;
 }
 .g_img{
   float: right;
-  width: 5.5rem;
-  height: 4.1rem;
+  width: 6.875rem;
+  height: 5.125rem;
 }
 .pullUpLabel{
   display: block;
-  line-height: 30px;
+  line-height: 1.875rem;
     color: #888;
     text-align: center;
 }
