@@ -73,6 +73,7 @@
 					font-size:0.75rem;
 					.yc{
 						height:0.875rem;
+						line-height: 0.875rem;
 						border:1px solid @yccolor;
 						color:@yccolor;
 						margin-right: 0.625rem;
